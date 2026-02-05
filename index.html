@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio | Mati</title>
+    <meta name="description" content="Portfolio de desarrollo - Mati" />
+    <link rel="icon" href="favicon.ico" sizes="any">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Suaviza el scroll sin JS */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-[#151312] text-white selection:bg-white/20">
+    <!-- Background glow -->
+    <div class="pointer-events-none fixed inset-0 -z-10">
+        <div class="absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-white/5 blur-3xl">
+        </div>
+        <div class="absolute bottom-[-240px] right-[-140px] h-[520px] w-[520px] rounded-full bg-white/5 blur-3xl"></div>
+    </div>
+
+    <!-- Floating Nav -->
+    <header class="fixed top-4 left-1/2 z-50 -translate-x-1/2">
+        <nav
+            class="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/[0.03] p-2 shadow-lg shadow-black/30 backdrop-blur">
+            <!-- Brand -->
+            <a href="#home"
+                class="group grid h-11 w-11 place-items-center rounded-xl bg-white/10 hover:bg-white/15 transition">
+                <span class="text-sm font-semibold tracking-wide">M</span>
+            </a>
+
+            <div class="h-8 w-px bg-white/10 mx-1"></div>
+
+            <!-- Links (icons + label on md+) -->
+            <a href="#projects" class="group flex h-11 items-center gap-2 rounded-xl px-3 hover:bg-white/10 transition">
+                <span class="text-lg">🧩</span>
+                <span class="hidden text-xs font-medium text-white/80 md:inline">Proyectos</span>
+            </a>
+
+            <a href="#experience"
+                class="group flex h-11 items-center gap-2 rounded-xl px-3 hover:bg-white/10 transition">
+                <span class="text-lg">⏳</span>
+                <span class="hidden text-xs font-medium text-white/80 md:inline">Experiencia</span>
+            </a>
+
+            <a href="#about" class="group flex h-11 items-center gap-2 rounded-xl px-3 hover:bg-white/10 transition">
+                <span class="text-lg">👋</span>
+                <span class="hidden text-xs font-medium text-white/80 md:inline">Sobre mí</span>
+            </a>
+
+            <a href="#contact" class="group flex h-11 items-center gap-2 rounded-xl px-3 hover:bg-white/10 transition">
+                <span class="text-lg">✉️</span>
+                <span class="hidden text-xs font-medium text-white/80 md:inline">Contacto</span>
+            </a>
+
+            <!-- CTA -->
+            <a href="#contact"
+                class="ml-1 hidden h-11 items-center rounded-xl bg-white text-[#151312] px-4 text-xs font-semibold hover:bg-white/90 transition sm:flex">
+                Hablemos →
+            </a>
+        </nav>
+    </header>
+
+    <!-- Page -->
+    <main id="home" class="mx-auto w-full max-w-6xl px-4 pt-28 pb-20 sm:pt-32">
+        <!-- HERO -->
+        <section class="grid gap-8 lg:grid-cols-12 lg:gap-10">
+            <div class="lg:col-span-7">
+                <p class="text-xs tracking-[0.25em] text-white/60">FULLSTACK DEVELOPER</p>
+
+                <h1 class="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
+                    Construyo productos<br />
+                    <span class="text-white/20">claros, rápidos y mantenibles</span>
+                </h1>
+
+                <p class="mt-5 max-w-xl text-sm leading-6 text-white/70 sm:text-base">
+                    Soy Mati. Trabajo fullstack (Angular / .NET) y actualmente sumo React + Node.
+                    Me enfoco en una buena experiencia de usuario y en una base técnica sólida.
+                </p>
+
+                <div class="mt-7 flex flex-wrap gap-3">
+                    <a href="#projects"
+                        class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#151312] hover:bg-white/90 transition">
+                        Ver proyectos
+                    </a>
+                    <a href="#contact"
+                        class="rounded-xl border border-white/15 bg-white/[0.03] px-5 py-3 text-sm font-semibold text-white hover:bg-white/10 transition">
+                        Contactarme
+                    </a>
+                    <a href="cv/CV_Matias_Narganes_ES.pdf" target="_blank" download=""
+                        class="rounded-xl border border-white/15 bg-white/[0.02] px-5 py-3 text-sm font-semibold text-white/80 hover:text-white hover:bg-white/10 transition">
+                        Descargar CV
+                    </a>
+                </div>
+
+                <!-- Quick stats -->
+                <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                    <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                        <p class="text-2xl font-semibold">5+</p>
+                        <p class="mt-1 text-xs text-white/60">Años construyendo software</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                        <p class="text-2xl font-semibold">Angular</p>
+                        <p class="mt-1 text-xs text-white/60">UI / Admins / Componentes</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-4 col-span-2 sm:col-span-1">
+                        <p class="text-2xl font-semibold">.NET</p>
+                        <p class="mt-1 text-xs text-white/60">APIs, auth, performance</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right card -->
+            <aside class="lg:col-span-5">
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div class="flex items-center justify-between">
+                        <p class="text-xs tracking-[0.2em] text-white/60">STACK</p>
+                        <span class="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">Disponible</span>
+                    </div>
+
+                    <ul class="mt-4 grid grid-cols-2 gap-2 text-sm">
+                        <li class="rounded-xl bg-white/[0.03] border border-white/10 px-3 py-2">Angular</li>
+                        <li class="rounded-xl bg-white/[0.03] border border-white/10 px-3 py-2">TypeScript</li>
+                        <li class="rounded-xl bg-white/[0.03] border border-white/10 px-3 py-2">.NET Core</li>
+                        <li class="rounded-xl bg-white/[0.03] border border-white/10 px-3 py-2">SQL</li>
+                        <li class="rounded-xl bg-white/[0.03] border border-white/10 px-3 py-2">Node</li>
+                        <li class="rounded-xl bg-white/[0.03] border border-white/10 px-3 py-2">React</li>
+                    </ul>
+
+                    <div class="mt-6 rounded-2xl border border-white/10 bg-white/[0.02] p-4">
+                        <p class="text-sm font-semibold">Proceso de desarrollo</p>
+                        <p class="mt-1 text-sm text-white/70">
+                            Primero objetivo y experiencia de usuario. Después arquitectura. Finalmente implementación.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <a class="rounded-xl border border-white/10 bg-white/[0.02] px-4 py-2 text-xs text-white/70 hover:bg-white/10 hover:text-white transition"
+                            href="#">
+                            GitHub
+                        </a>
+                        <a class="rounded-xl border border-white/10 bg-white/[0.02] px-4 py-2 text-xs text-white/70 hover:bg-white/10 hover:text-white transition"
+                            href="#">
+                            LinkedIn
+                        </a>
+                        <a class="rounded-xl border border-white/10 bg-white/[0.02] px-4 py-2 text-xs text-white/70 hover:bg-white/10 hover:text-white transition"
+                            href="#">
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="mt-20">
+            <h2 class="text-center text-3xl font-semibold leading-tight sm:text-5xl">
+                PROYECTOS<br />
+                <span class="text-white/20">RECIENTES</span>
+            </h2>
+
+            <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Card 1: Centro Cultural -->
+                <a href="https://centroculturalborges.gob.ar/" target="_blank"
+                    class="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 hover:bg-white/[0.06] transition">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="text-lg font-semibold">Centro Cultural Web</h3>
+                            <p class="mt-1 text-sm text-white/70">Angular + .NET | Web pública + Admin</p>
+                        </div>
+                        <span
+                            class="rounded-xl bg-white/10 px-3 py-1 text-xs text-white/70 group-hover:bg-white/15 transition">Ver
+                            →</span>
+                    </div>
+                    <p class="mt-4 text-sm text-white/70">
+                        Agenda, contenidos multimedia, performance y administración de contenidos.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-3 py-1 text-xs text-white/70">Angular</span>
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-3 py-1 text-xs text-white/70">.NET</span>
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-3 py-1 text-xs text-white/70">MySQL</span>
+                    </div>
+                </a>
+
+                <!-- Card 2: Casa App -->
+                <a href="https://github.com/matiasnarganes1/casa-app" target="_blank"
+                    class="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 hover:bg-white/[0.06] transition">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="text-lg font-semibold">Casa App</h3>
+                            <p class="mt-1 text-sm text-white/70">Aplicación fullstack</p>
+                        </div>
+                        <span
+                            class="rounded-xl bg-white/10 px-3 py-1 text-xs text-white/70 group-hover:bg-white/15 transition">Ver
+                            →</span>
+                    </div>
+                    <p class="mt-4 text-sm text-white/70">
+                        App orientada a gestión y organización del hogar, con foco en UX y reglas claras de negocio.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-3 py-1 text-xs text-white/70">Fullstack</span>
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-3 py-1 text-xs text-white/70">API</span>
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-3 py-1 text-xs text-white/70">UI</span>
+                    </div>
+                </a>
+
+                <!-- Card 3: Landing Page + Admin (en proceso) -->
+                <a href="#"
+                    class="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 hover:bg-white/[0.06] transition">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="text-lg font-semibold">Landing Page + Admin</h3>
+                            <p class="mt-1 text-sm text-white/70">En proceso | Tailwind + Admin</p>
+                        </div>
+                        <span
+                            class="rounded-xl bg-white/10 px-3 py-1 text-xs text-white/70 group-hover:bg-white/15 transition">Ver
+                            →</span>
+                    </div>
+                    <p class="mt-4 text-sm text-white/70">
+                        Landing editable desde un panel de administración. Base reutilizable para múltiples sitios.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-3 py-1 text-xs text-white/70">HTML</span>
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-3 py-1 text-xs text-white/70">Tailwind</span>
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-3 py-1 text-xs text-white/70">Admin</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="mt-20">
+            <h2 class="text-center text-3xl font-semibold leading-tight sm:text-5xl">
+                AÑOS DE<br />
+                <span class="text-white/20">EXPERIENCIA</span>
+            </h2>
+
+            <div class="mt-10 grid gap-4 lg:grid-cols-2">
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <p class="text-xs tracking-[0.2em] text-white/60">2021 — HOY</p>
+                    <h3 class="mt-2 text-lg font-semibold">Fullstack (Angular / .NET)</h3>
+                    <p class="mt-2 text-sm text-white/70">
+                        Desarrollo end-to-end, mejoras de performance, refactors y evolución de producto.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <p class="text-xs tracking-[0.2em] text-white/60">FOCUS</p>
+                    <h3 class="mt-2 text-lg font-semibold">Fortalezas</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-white/70">
+                        <li>• Componentes limpios y reutilizables</li>
+                        <li>• APIs con contratos claros (DTOs, validación, auth)</li>
+                        <li>• Experiencia de usuario consistente</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="mt-20">
+            <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+                <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                    <div>
+                        <h2 class="text-2xl font-semibold sm:text-3xl">Sobre mí</h2>
+                        <p class="mt-3 max-w-3xl text-sm text-white/70 sm:text-base">
+                            Me interesa construir productos que sean fáciles de usar y simples de mantener.
+                            Priorizo claridad en interfaz, buenas decisiones técnicas y calidad de implementación.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-4 py-2 text-xs text-white/70">Clean
+                            UI</span>
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-4 py-2 text-xs text-white/70">Performance</span>
+                        <span
+                            class="rounded-full border border-white/10 bg-white/[0.02] px-4 py-2 text-xs text-white/70">DX</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="mt-20">
+            <h2 class="text-center text-3xl font-semibold leading-tight sm:text-5xl">
+                TRABAJEMOS<br />
+                <span class="text-white/20">JUNTOS</span>
+            </h2>
+
+            <div class="mt-10 grid gap-6 lg:grid-cols-12">
+                <div class="lg:col-span-5 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <h3 class="text-lg font-semibold">Contacto directo</h3>
+                    <p class="mt-2 text-sm text-white/70">
+                        Si querés conversar sobre un proyecto o propuesta, podés escribirme por estos medios.
+                    </p>
+
+                    <div class="mt-5 space-y-3 text-sm">
+                        <a href="mailto:tuemail@dominio.com"
+                            class="block rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 hover:bg-white/10 transition">
+                            ✉️ matiasnarganes1@gmail.com.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/matiasnarganes/" target="_blank"
+                            class="block rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 hover:bg-white/10 transition">
+                            💼 LinkedIn
+                        </a>
+                        <a href="https://github.com/matiasnarganes1" target="_blank"
+                            class="block rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 hover:bg-white/10 transition">
+                            🧑‍💻 GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <label class="block">
+                                <span class="text-xs font-medium text-white/60">Nombre</span>
+                                <input
+                                    class="mt-2 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25"
+                                    type="text" name="name" placeholder="Tu nombre" required />
+                            </label>
+
+                            <label class="block">
+                                <span class="text-xs font-medium text-white/60">Email</span>
+                                <input
+                                    class="mt-2 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25"
+                                    type="email" name="email" placeholder="tu@mail.com" required />
+                            </label>
+                        </div>
+
+                        <label class="block">
+                            <span class="text-xs font-medium text-white/60">Mensaje</span>
+                            <textarea
+                                class="mt-2 min-h-[140px] w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25"
+                                name="message" placeholder="Contame sobre tu idea o necesidad…" required></textarea>
+                        </label>
+
+                        <div class="flex flex-wrap items-center gap-3">
+                            <button
+                                class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#151312] hover:bg-white/90 transition"
+                                type="submit">
+                                Enviar →
+                            </button>
+                            <p class="text-xs text-white/50">
+                                También podés incluir referencias o links para tener más contexto.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 border-t border-white/10 pt-8 text-center text-xs text-white/50">
+            <p>© <span id="y"></span> Mati — Hecho con HTML + Tailwind.</p>
+        </footer>
+    </main>
+
+    <script>
+        const form = document.getElementById('contactForm');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = form.querySelector('[name="name"]').value;
+            const email = form.querySelector('[name="email"]').value;
+            const message = form.querySelector('[name="message"]').value;
+
+            const subject = encodeURIComponent('Contacto desde portfolio');
+            const body = encodeURIComponent(
+                `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`
+            );
+
+            window.location.href = `mailto:matiasnarganes1@gmail.com?subject=${subject}&body=${body}`;
+        });
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
