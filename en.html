@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Portfolio | Matias Narganes</title>
-    <meta name="description" content="Portfolio de desarrollo - Matias Narganes" />
+    <meta name="description" content="Developer portfolio - Matias Narganes" />
     <link rel="icon" href="favicon.ico" sizes="any">
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        /* Suaviza el scroll sin JS */
+        /* Smooth scroll without JS */
         html {
             scroll-behavior: smooth;
         }
@@ -28,7 +28,7 @@
 
     <!-- Floating Nav -->
     <header class="fixed top-4 left-1/2 z-50 -translate-x-1/2">
-        <nav aria-label="Navegación principal"
+        <nav aria-label="Main navigation"
             class="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/[0.03] p-2 shadow-lg shadow-black/30 backdrop-blur">
             <!-- Brand -->
             <a href="#home"
@@ -41,45 +41,45 @@
             <!-- Links (icons + label on md+) -->
             <a href="#projects" class="group flex h-11 items-center gap-2 rounded-xl px-3 hover:bg-white/10 transition">
                 <span class="text-lg">🧩</span>
-                <span class="hidden text-xs font-medium text-white/80 md:inline">Proyectos</span>
+                <span class="hidden text-xs font-medium text-white/80 md:inline">Projects</span>
             </a>
 
             <a href="#experience"
                 class="group flex h-11 items-center gap-2 rounded-xl px-3 hover:bg-white/10 transition">
                 <span class="text-lg">⏳</span>
-                <span class="hidden text-xs font-medium text-white/80 md:inline">Experiencia</span>
+                <span class="hidden text-xs font-medium text-white/80 md:inline">Experience</span>
             </a>
 
             <a href="#about" class="group flex h-11 items-center gap-2 rounded-xl px-3 hover:bg-white/10 transition">
                 <span class="text-lg">👋</span>
-                <span class="hidden text-xs font-medium text-white/80 md:inline">Sobre mí</span>
+                <span class="hidden text-xs font-medium text-white/80 md:inline">About</span>
             </a>
 
             <a href="#contact" class="group flex h-11 items-center gap-2 rounded-xl px-3 hover:bg-white/10 transition">
                 <span class="text-lg">✉️</span>
-                <span class="hidden text-xs font-medium text-white/80 md:inline">Contacto</span>
+                <span class="hidden text-xs font-medium text-white/80 md:inline">Contact</span>
             </a>
 
             <!-- Language -->
             <div class="ml-1 hidden items-center rounded-xl border border-white/10 bg-white/[0.02] p-1 sm:flex"
-                aria-label="Selector de idioma">
-                <!-- ES (activo en esta página) -->
-                <a href="index.html" aria-current="page" data-lang-switch
-                    class="h-9 rounded-lg bg-white/10 px-3 grid place-items-center text-xs font-semibold text-white">
+                aria-label="Language selector">
+                <!-- ES -->
+                <a href="index.html" data-lang-switch
+                    class="h-9 rounded-lg px-3 grid place-items-center text-xs font-semibold text-white/70 hover:bg-white/10 hover:text-white transition">
                     ES
                 </a>
 
-                <!-- EN -->
-                <a href="en.html" data-lang-switch
-                    class="h-9 rounded-lg px-3 grid place-items-center text-xs font-semibold text-white/70 hover:bg-white/10 hover:text-white transition">
+                <!-- EN (active) -->
+                <a href="en.html" aria-current="page" data-lang-switch
+                    class="h-9 rounded-lg bg-white/10 px-3 grid place-items-center text-xs font-semibold text-white">
                     EN
                 </a>
             </div>
 
             <!-- CTA -->
             <a href="#contact"
-                class="ml-1 hidden h-11 items-center rounded-xl bg-white text-[#151312] px-4 text-xs font-semibold hover:bg-white/90 transition sm:flex whitespace-nowrap">
-                Hablemos →
+                class="ml-1 hidden h-11 items-center rounded-xl bg-white text-[#151312] px-4 text-xs font-semibold hover:bg-white/90 transition sm:flex">
+                Let’s talk →
             </a>
         </nav>
     </header>
@@ -92,27 +92,27 @@
                 <p class="text-xs tracking-[0.25em] text-white/60">FULLSTACK DEVELOPER</p>
 
                 <h1 class="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
-                    Construyo productos<br />
-                    <span class="text-white/20">claros, rápidos y mantenibles</span>
+                    I build products<br />
+                    <span class="text-white/20">clear, fast, and maintainable</span>
                 </h1>
 
                 <p class="mt-5 max-w-xl text-sm leading-6 text-white/70 sm:text-base">
-                    Soy Matias. Trabajo fullstack (Angular / .NET) y actualmente sumo React + Node.
-                    Me enfoco en una buena experiencia de usuario y en una base técnica sólida.
+                    I’m Matias. I work fullstack (Angular / .NET) and I’m currently adding React + Node.
+                    I focus on strong user experience and a solid technical foundation.
                 </p>
 
                 <div class="mt-7 flex flex-wrap gap-3">
                     <a href="#projects"
                         class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#151312] hover:bg-white/90 transition">
-                        Ver proyectos
+                        View projects
                     </a>
                     <a href="#contact"
                         class="rounded-xl border border-white/15 bg-white/[0.03] px-5 py-3 text-sm font-semibold text-white hover:bg-white/10 transition">
-                        Contactarme
+                        Contact me
                     </a>
                     <a href="cv/CV_Matias_Narganes_ES.pdf" target="_blank" download=""
                         class="rounded-xl border border-white/15 bg-white/[0.02] px-5 py-3 text-sm font-semibold text-white/80 hover:text-white hover:bg-white/10 transition">
-                        Descargar CV
+                        Download CV
                     </a>
                 </div>
 
@@ -120,11 +120,11 @@
                 <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3">
                     <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
                         <p class="text-2xl font-semibold">5+</p>
-                        <p class="mt-1 text-xs text-white/60">Años construyendo software</p>
+                        <p class="mt-1 text-xs text-white/60">Years building software</p>
                     </div>
                     <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
                         <p class="text-2xl font-semibold">Angular</p>
-                        <p class="mt-1 text-xs text-white/60">UI / Admins / Componentes</p>
+                        <p class="mt-1 text-xs text-white/60">UI / Admins / Components</p>
                     </div>
                     <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-4 col-span-2 sm:col-span-1">
                         <p class="text-2xl font-semibold">.NET</p>
@@ -138,7 +138,7 @@
                 <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                     <div class="flex items-center justify-between">
                         <p class="text-xs tracking-[0.2em] text-white/60">STACK</p>
-                        <span class="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">Disponible</span>
+                        <span class="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">Available</span>
                     </div>
 
                     <ul class="mt-4 grid grid-cols-2 gap-2 text-sm">
@@ -151,9 +151,9 @@
                     </ul>
 
                     <div class="mt-6 rounded-2xl border border-white/10 bg-white/[0.02] p-4">
-                        <p class="text-sm font-semibold">Proceso de desarrollo</p>
+                        <p class="text-sm font-semibold">Development process</p>
                         <p class="mt-1 text-sm text-white/70">
-                            Primero, objetivo y experiencia de usuario. Después arquitectura. Finalmente implementación.
+                            First: goals and user experience. Then architecture. Finally implementation.
                         </p>
                     </div>
 
@@ -178,8 +178,8 @@
         <!-- PROJECTS -->
         <section id="projects" class="mt-20">
             <h2 class="text-center text-3xl font-semibold leading-tight sm:text-5xl">
-                PROYECTOS<br />
-                <span class="text-white/20">RECIENTES</span>
+                PROJECTS<br />
+                <span class="text-white/20">RECENT</span>
             </h2>
 
             <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -189,14 +189,14 @@
                     <div class="flex items-start justify-between gap-4">
                         <div>
                             <h3 class="text-lg font-semibold">Centro Cultural Web</h3>
-                            <p class="mt-1 text-sm text-white/70">Angular + .NET | Web pública + Admin</p>
+                            <p class="mt-1 text-sm text-white/70">Angular + .NET | Public website + Admin</p>
                         </div>
                         <span
-                            class="rounded-xl bg-white/10 px-3 py-1 text-xs text-white/70 group-hover:bg-white/15 transition whitespace-nowrap">Ver
+                            class="rounded-xl bg-white/10 px-3 py-1 text-xs text-white/70 group-hover:bg-white/15 transition">View
                             →</span>
                     </div>
                     <p class="mt-4 text-sm text-white/70">
-                        Agenda, contenidos multimedia, performance y administración de contenidos.
+                        Events agenda, multimedia content, performance improvements and content administration.
                     </p>
                     <div class="mt-4 flex flex-wrap gap-2">
                         <span
@@ -214,14 +214,14 @@
                     <div class="flex items-start justify-between gap-4">
                         <div>
                             <h3 class="text-lg font-semibold">Casa App</h3>
-                            <p class="mt-1 text-sm text-white/70">Aplicación fullstack</p>
+                            <p class="mt-1 text-sm text-white/70">Fullstack application</p>
                         </div>
                         <span
-                            class="rounded-xl bg-white/10 px-3 py-1 text-xs text-white/70 group-hover:bg-white/15 transition whitespace-nowrap">Ver
+                            class="rounded-xl bg-white/10 px-3 py-1 text-xs text-white/70 group-hover:bg-white/15 transition">View
                             →</span>
                     </div>
                     <p class="mt-4 text-sm text-white/70">
-                        App orientada a gestión y organización del hogar, con foco en UX y reglas claras de negocio.
+                        Home organization and management app, focused on UX and clear business rules.
                     </p>
                     <div class="mt-4 flex flex-wrap gap-2">
                         <span
@@ -233,20 +233,20 @@
                     </div>
                 </a>
 
-                <!-- Card 3: Landing Page + Admin (en proceso) -->
+                <!-- Card 3: Landing Page + Admin (in progress) -->
                 <a href="#"
                     class="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 hover:bg-white/[0.06] transition">
                     <div class="flex items-start justify-between gap-4">
                         <div>
                             <h3 class="text-lg font-semibold">Landing Page + Admin</h3>
-                            <p class="mt-1 text-sm text-white/70">En proceso | Tailwind + Admin</p>
+                            <p class="mt-1 text-sm text-white/70">In progress | Tailwind + Admin</p>
                         </div>
                         <span
-                            class="rounded-xl bg-white/10 px-3 py-1 text-xs text-white/70 group-hover:bg-white/15 transition whitespace-nowrap">Ver
+                            class="rounded-xl bg-white/10 px-3 py-1 text-xs text-white/70 group-hover:bg-white/15 transition">View
                             →</span>
                     </div>
                     <p class="mt-4 text-sm text-white/70">
-                        Landing editable desde un panel de administración. Base reutilizable para múltiples sitios.
+                        A landing page editable via an admin panel. Reusable foundation for multiple websites.
                     </p>
                     <div class="mt-4 flex flex-wrap gap-2">
                         <span
@@ -263,26 +263,26 @@
         <!-- EXPERIENCE -->
         <section id="experience" class="mt-20">
             <h2 class="text-center text-3xl font-semibold leading-tight sm:text-5xl">
-                AÑOS DE<br />
-                <span class="text-white/20">EXPERIENCIA</span>
+                YEARS OF<br />
+                <span class="text-white/20">EXPERIENCE</span>
             </h2>
 
             <div class="mt-10 grid gap-4 lg:grid-cols-2">
                 <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-                    <p class="text-xs tracking-[0.2em] text-white/60">2021 — HOY</p>
+                    <p class="text-xs tracking-[0.2em] text-white/60">2021 — PRESENT</p>
                     <h3 class="mt-2 text-lg font-semibold">Fullstack (Angular / .NET)</h3>
                     <p class="mt-2 text-sm text-white/70">
-                        Desarrollo end-to-end, mejoras de performance, refactors y evolución de producto.
+                        End-to-end development, performance improvements, refactors and product evolution.
                     </p>
                 </div>
 
                 <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                     <p class="text-xs tracking-[0.2em] text-white/60">FOCUS</p>
-                    <h3 class="mt-2 text-lg font-semibold">Fortalezas</h3>
+                    <h3 class="mt-2 text-lg font-semibold">Strengths</h3>
                     <ul class="mt-3 space-y-2 text-sm text-white/70">
-                        <li>• Componentes limpios y reutilizables</li>
-                        <li>• APIs con contratos claros (DTOs, validación, auth)</li>
-                        <li>• Experiencia de usuario consistente</li>
+                        <li>• Clean, reusable components</li>
+                        <li>• APIs with clear contracts (DTOs, validation, auth)</li>
+                        <li>• Consistent user experience</li>
                     </ul>
                 </div>
             </div>
@@ -293,10 +293,10 @@
             <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
                 <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
                     <div>
-                        <h2 class="text-2xl font-semibold sm:text-3xl">Sobre mí</h2>
+                        <h2 class="text-2xl font-semibold sm:text-3xl">About</h2>
                         <p class="mt-3 max-w-3xl text-sm text-white/70 sm:text-base">
-                            Me interesa construir productos que sean fáciles de usar y simples de mantener.
-                            Priorizo claridad en interfaz, buenas decisiones técnicas y calidad de implementación.
+                            I enjoy building products that are easy to use and simple to maintain.
+                            I prioritize clear interfaces, good technical decisions and implementation quality.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2">
@@ -315,27 +315,27 @@
         <!-- CONTACT -->
         <section id="contact" class="mt-20">
             <h2 class="text-center text-3xl font-semibold leading-tight sm:text-5xl">
-                TRABAJEMOS<br />
-                <span class="text-white/20">JUNTOS</span>
+                LET'S WORK<br />
+                <span class="text-white/20">TOGETHER</span>
             </h2>
 
             <address class="mt-10 grid gap-6 lg:grid-cols-12">
                 <div class="lg:col-span-5 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-                    <h3 class="text-lg font-semibold">Contacto directo</h3>
+                    <h3 class="text-lg font-semibold">Direct contact</h3>
                     <p class="mt-2 text-sm text-white/70">
-                        Si querés conversar sobre un proyecto o propuesta, podés escribirme por estos medios.
+                        If you’d like to talk about a project or opportunity, you can reach me here.
                     </p>
 
                     <div class="mt-5 space-y-3 text-sm">
-                        <a href="mailto:tuemail@dominio.com"
+                        <a href="mailto:matiasnarganes1@gmail.com"
                             class="block rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 hover:bg-white/10 transition">
-                            ✉️ matiasnarganes1@gmail.com.com
+                            ✉️ matiasnarganes1@gmail.com
                         </a>
-                        <a href="https://www.linkedin.com/in/matiasnarganes/" target="_blank"
+                        <a href="https://www.linkedin.com/in/matiasnarganes/" target="_blank" rel="noopener"
                             class="block rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 hover:bg-white/10 transition">
                             💼 LinkedIn
                         </a>
-                        <a href="https://github.com/matiasnarganes1" target="_blank"
+                        <a href="https://github.com/matiasnarganes1" target="_blank" rel="noopener"
                             class="block rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 hover:bg-white/10 transition">
                             🧑‍💻 GitHub
                         </a>
@@ -346,35 +346,35 @@
                     <form id="contactForm" class="space-y-4">
                         <div class="grid gap-4 sm:grid-cols-2">
                             <label class="block">
-                                <span class="text-xs font-medium text-white/60">Nombre</span>
+                                <span class="text-xs font-medium text-white/60">Name</span>
                                 <input
                                     class="mt-2 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25"
-                                    type="text" name="name" placeholder="Tu nombre" required />
+                                    type="text" name="name" placeholder="Your name" required />
                             </label>
 
                             <label class="block">
                                 <span class="text-xs font-medium text-white/60">Email</span>
                                 <input
                                     class="mt-2 w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25"
-                                    type="email" name="email" placeholder="tu@mail.com" required />
+                                    type="email" name="email" placeholder="you@mail.com" required />
                             </label>
                         </div>
 
                         <label class="block">
-                            <span class="text-xs font-medium text-white/60">Mensaje</span>
+                            <span class="text-xs font-medium text-white/60">Message</span>
                             <textarea
                                 class="mt-2 min-h-[140px] w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25"
-                                name="message" placeholder="Contame sobre tu idea o necesidad…" required></textarea>
+                                name="message" placeholder="Tell me about your project…" required></textarea>
                         </label>
 
                         <div class="flex flex-wrap items-center gap-3">
                             <button
-                                class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#151312] hover:bg-white/90 transition whitespace-nowrap"
+                                class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#151312] hover:bg-white/90 transition"
                                 type="submit">
-                                Enviar →
+                                Send →
                             </button>
                             <p class="text-xs text-white/50">
-                                También podés incluir referencias o links para tener más contexto.
+                                You can include references or links for more context.
                             </p>
                         </div>
                     </form>
@@ -384,7 +384,7 @@
 
         <!-- Footer -->
         <footer class="mt-20 border-t border-white/10 pt-8 text-center text-xs text-white/50">
-            <p>© <span id="y"></span> Matias — Hecho con HTML + Tailwind.</p>
+            <p>© <span id="y"></span> Matias — Built with HTML + Tailwind.</p>
         </footer>
     </main>
 
@@ -398,13 +398,14 @@
             const email = form.querySelector('[name="email"]').value;
             const message = form.querySelector('[name="message"]').value;
 
-            const subject = encodeURIComponent('Contacto desde portfolio');
+            const subject = encodeURIComponent('Contact from portfolio');
             const body = encodeURIComponent(
-                `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`
+                `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
             );
 
             window.location.href = `mailto:matiasnarganes1@gmail.com?subject=${subject}&body=${body}`;
         });
+
         document.getElementById("y").textContent = new Date().getFullYear();
         document.querySelectorAll('[data-lang-switch]').forEach(link => {
             link.addEventListener('click', e => {
